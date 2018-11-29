@@ -1,0 +1,29 @@
+<section id="references">
+  <div class="container" style="min-height: 100vh;">
+    <div class="col-sm-12">
+      <div class="mb-5 text-center">
+        <h2 data-animate="fadeInUp" class="title">My work</h2>
+        <p data-animate="fadeInUp" class="lead">I have worked and learning on many projects. I have picked only the latest
+          for you.</p>
+      </div>
+      <div id="references-masonry" data-animate="fadeInUp" class="text-center">
+        <div class="row">
+          {{#if portfolio}}
+          {{#each portfolio}}
+          <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+            <div class="reference"><img style="width:150px; height:150px" src="/images/portfolio/{{image}}" alt=""
+                class="img-fluid">
+              <div class="">
+              </div>
+            </div><a href="/details/{{id}}">{{title}}</a></p>
+          </div>
+          {{/each}}
+          {{else}}
+          <p>No projects</p>
+          {{/if}}
+        </div>
+      </div>
+      </a>
+    </div>
+  </div>
+</section>

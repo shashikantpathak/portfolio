@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "connect-flash": "*",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "handlebars-intl": "^1.1.2",
+    "moment": "*",
+    "multer": "*",
+    "mysql": "*",
+    "nodemailer": "^4.7.0",
+    "nodemon": "^1.18.7"
+  },
+  "author": "",
+  "license": "ISC"
+}

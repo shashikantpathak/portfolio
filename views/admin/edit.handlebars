@@ -1,0 +1,28 @@
+<section id="intro" class="intro-section pb-2" data-animate="slideInUp">
+  <div class="container text-center" style="margin-top:15px">
+    <a class="button secondary" href="/admin/index">Go Back</a>
+    <h3>Edit portfolio</h3>
+    <form method="post" action="/admin/edit/{{portfolio.id}}" enctype="multipart/form-data">
+      <div class="form-group">
+        <input type="text" class="form-control" name="title" placeholder="Title" value="{{portfolio.title}}">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="service" value="{{portfolio.service}}" placeholder="Service">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="client" placeholder="Client" value="{{portfolio.client}}">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="url" placeholder="url" value="{{portfolio.url}}">
+      </div>
+     
+      <div class="form-group">
+        <textarea class="form-control" name="description">{{portfolio.description}}</textarea>
+      </div>
+      <div class="form-group">
+        <input type="file" class="form-control" name="portfolioimage" value="{{portfolio.image}}">
+      </div>
+      <button type="submit" class="button">Submit</button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+<section id="intro" class="intro-section pb-2" data-animate="slideInUp">
+    <div class="container" style="margin-top:30px">
+        <p data-animate="slideInUp" class="fixed"><a href="/admin/add" class="button success">Add
+                Project</a></p>
+        {{#if portfolio}}
+        <table class="table table-striped">
+            <tr>
+                <th></th>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Service</th>
+                <th>Link</th>
+                <th></th>
+            </tr>
+            {{#each portfolio}}
+            <tr>
+                <td><img style="width:80px" class="small-img" src="/images/portfolio/{{image}}"></td>
+                <td>{{id}}</td>
+                <td>{{title}}</td>
+                <td style="width:20%">{{service}}</td>
+                <td>{{url}}</td>
+                <td><a href="/admin/edit/{{id}}" class="button default">Edit</a>
+                    <a href="/admin/delete/{{id}}" data-id="{{id}}" class="button alert delete-project">Delete</a></td>
+            </tr>
+            {{/each}}
+        </table>
+        {{else}}
+        No portfolio
+        {{/if}}
+    </div>
+</section>

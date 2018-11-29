@@ -1,0 +1,45 @@
+<section id="contact" class="contact-section contact">
+    <div class="details-border">
+        <section class="divide">
+            <nav class="navv text-center">
+                <div style="height: 300px;"><img src="/images/portfolio/{{portfolio.image}}" alt="This is me - Nodejs Developer"
+                        class="image rounded-circle img-fluid"></div>
+
+                <p class="buttons "><a href="{{portfolio.url}}" style="font-size: 10px;" class="btn btn-outline-primary"><i
+                            class="fa fa-globe"></i>
+                        Visit website</a></p>
+            </nav>
+
+            <article>
+                <div>
+                    <h3 class="" style="margin-left:20%">{{portfolio.title}}</h3>
+
+
+                    <table class="table table-borderless" style="margin-top:40px">
+                        <tbody>
+                            <tr>
+                                <th style="width: 20%;" scope="row">Client</th>
+                                <td>:{{portfolio.client}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Service</th>
+                                <td>:{{portfolio.service}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Date</th>
+                                <td>:{{formatDate portfolio.Date day="numeric" month="long" year="numeric" }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <article>
+                    <div style="display: inline-block;">
+                        <h4>Project Description:</h4>
+                    </div>
+                    <span>{{portfolio.description}}</span>
+                </article>
+            </article>
+
+        </section>
+    </div>
+</section>
